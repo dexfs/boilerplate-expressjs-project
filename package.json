@@ -1,0 +1,41 @@
+{
+  "name": "boilerplate-expressjs-project",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "André Santos <andre@dexdev.com.br>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bookshelf": "^0.13.3",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "helmet": "^3.12.0",
+    "knex": "^0.14.6",
+    "mongoose": "^5.1.1",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-export-default": "^7.0.0-alpha.20",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.72.0",
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.4",
+    "prettier": "^1.12.1",
+    "rimraf": "^2.6.2",
+    "supertest": "^3.1.0"
+  }
+}

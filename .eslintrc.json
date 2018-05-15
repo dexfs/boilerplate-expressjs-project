@@ -1,0 +1,42 @@
+{
+  "extends": "prettier",
+  "env": {
+      "node": true,
+      "es6": true
+  },
+  "parserOptions": {
+      "ecmaVersion": 2017,
+      "sourceType": "module"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+      "prettier/prettier": ["error", { "singleQuote": true, "semi": false }],
+      "no-console": 0,
+      "complexity": [
+          "error",
+          7
+      ],
+      "max-depth": 2,
+      "no-nested-ternary": "error",
+      "no-lonely-if": "error",
+      "no-else-return": "error",
+      "no-confusing-arrow": "error",
+      "camelcase": "error",
+      "max-len": [
+          1,
+          120,
+          2
+      ],
+      "no-param-reassign": [
+          2,
+          {
+              "props": false
+          }
+      ],
+      "no-continue": 0,
+      "no-underscore-dangle": 0,
+      "generator-star-spacing": 0
+  }
+}
