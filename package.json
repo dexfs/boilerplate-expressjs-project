@@ -5,6 +5,15 @@
   "author": "André Santos <andre@dexdev.com.br>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "node dist/index.js",
+    "watch": "./node_modules/.bin/nodemon src/index.js --exec babel-node",
+    "lint": "eslint src/**",
+    "precommit": "npm run lint",
+    "build": "rimraf ./dist && babel src --ignore *.spec.js --out-dir dist --copy-files",
+    "test:watch": "jest --watchAll",
+    "test": "jest --coverage"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "bookshelf": "^0.13.3",
