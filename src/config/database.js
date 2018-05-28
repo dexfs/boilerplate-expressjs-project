@@ -10,10 +10,8 @@ const config = {
 }
 const knex = require('knex')(config)
 const bookshelf = require('bookshelf')(knex)
-const pluginBookshelfSoftDelete = require('bookshelf-soft-delete')
-bookshelf.plugin(pluginBookshelfSoftDelete)
+bookshelf.plugin(require('bookshelf-soft-delete'))
+bookshelf.plugin(require('bookshelf-uuid'))
+bookshelf.plugin(require('bookshelf-modelbase').pluggable)
 
-export default {
-  knex,
-  bookshelf
-}
+export default { knex, bookshelf }

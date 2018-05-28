@@ -23,7 +23,7 @@
       "no-lonely-if": "error",
       "no-else-return": "error",
       "no-confusing-arrow": "error",
-      "camelcase": "error",
+      "camelcase": ["error", {"properties": "never"}],
       "max-len": [
           1,
           120,
