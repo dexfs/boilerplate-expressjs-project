@@ -4,9 +4,8 @@ import BodyParser from 'body-parser'
 import cors from 'cors'
 import helmet from 'helmet'
 import defaultError from './middlewares/defaultError'
-import type { $Application } from 'express'
 
-const app: $Application = express()
+const app = express()
 
 app.use(BodyParser.urlencoded({ extended: true }));
 app.use(BodyParser.json());
